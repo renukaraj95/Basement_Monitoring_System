@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Dec  8 13:56:53 2017
+# Process ID: 11760
+# Current directory: D:/Temp and Hum/I2C_Humidity
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10536 D:\Temp and Hum\I2C_Humidity\I2C_Humidity.xpr
+# Log file: D:/Temp and Hum/I2C_Humidity/vivado.log
+# Journal file: D:/Temp and Hum/I2C_Humidity\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Temp and Hum/I2C_Humidity/I2C_Humidity.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/rrajkumar/Desktop/Sim/I2C_Humidity' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 780.492 ; gain = 2.273
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 14:07:11 2017...

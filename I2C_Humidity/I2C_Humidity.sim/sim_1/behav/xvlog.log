@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Project Modules/I2C_Humidity/I2C_Humidity.srcs/sources_1/new/Humidity_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Humidity_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Project Modules/I2C_Humidity/I2C_Humidity.srcs/sim_1/new/Hum_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2c_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Project Modules/I2C_Humidity/I2C_Humidity.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

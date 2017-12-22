@@ -1,0 +1,159 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Dec  8 22:16:41 2017
+# Process ID: 15384
+# Current directory: D:/Temp and Hum/I2C_Humidity
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2880 D:\Temp and Hum\I2C_Humidity\I2C_Humidity.xpr
+# Log file: D:/Temp and Hum/I2C_Humidity/vivado.log
+# Journal file: D:/Temp and Hum/I2C_Humidity\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Temp and Hum/I2C_Humidity/I2C_Humidity.xpr}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Temp and Hum/I2C_Humidity/I2C_Humidity.runs/impl_1/Humidity_Top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Temp and Hum/I2C_Humidity/I2C_Humidity.runs/impl_1/Humidity_Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+file mkdir D:/Temp and Hum/I2C_Humidity/I2C_Humidity.srcs/sim_1/new
+file mkdir D:/Temp and Hum/I2C_Humidity/I2C_Humidity.srcs/sim_1/new
+file mkdir D:/Temp and Hum/I2C_Humidity/I2C_Humidity.srcs/sim_1/new
+file mkdir D:/Temp and Hum/I2C_Humidity/I2C_Humidity.srcs/sim_1/new
+file mkdir D:/Temp and Hum/I2C_Humidity/I2C_Humidity.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir D:/Temp and Hum/I2C_Humidity/I2C_Humidity.srcs/sim_1/new
+file mkdir {D:/Temp and Hum/I2C_Humidity/I2C_Humidity.srcs/sim_1/new}
+close [ open {D:/Temp and Hum/I2C_Humidity/I2C_Humidity.srcs/sim_1/new/Hum_tb.v} w ]
+add_files -fileset sim_1 {{D:/Temp and Hum/I2C_Humidity/I2C_Humidity.srcs/sim_1/new/Hum_tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source i2c_test.tcl
+add_wave {{/i2c_test/uut/state}} 
+add_wave {{/i2c_test/uut/bitcount}} 
+add_wave {{/i2c_test/uut/sda_out}} 
+run 3000 us
+close_sim
+launch_simulation
+source i2c_test.tcl
+add_wave {{/i2c_test/uut/state}} 
+add_wave {{/i2c_test/uut/bitcount}} 
+run 3000 us
+run all
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Temp and Hum/I2C_Humidity/I2C_Humidity.runs/impl_1/Humidity_Top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Temp and Hum/I2C_Humidity/I2C_Humidity.runs/impl_1/Humidity_Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+launch_simulation
+source i2c_test.tcl
+add_wave {{/i2c_test/uut/state}} 
+add_wave {{/i2c_test/uut/bitcount}} 
+run 3000 us
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Temp and Hum/I2C_Humidity/I2C_Humidity.runs/impl_1/Humidity_Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
+launch_simulation
+source i2c_test.tcl
+add_wave {{/i2c_test/uut/state}} 
+add_wave {{/i2c_test/uut/bitcount}} 
+run 3000 us
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source i2c_test.tcl
+add_wave {{/i2c_test/uut/state}} 
+add_wave {{/i2c_test/uut/bitcount}} 
+run 3000 us
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source i2c_test.tcl
+add_wave {{/i2c_test/uut/state}} 
+add_wave {{/i2c_test/uut/bitcount}} 
+run 3000 us
+run 3000 us
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Temp and Hum/I2C_Humidity/I2C_Humidity.runs/impl_1/Humidity_Top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+launch_simulation
+source i2c_test.tcl
+add_wave {{/i2c_test/uut/state}} 
+log_wave {/i2c_test/uut/bitcount} 
+add_wave {{/i2c_test/uut/bitcount}} 
+run 3000 us
+close_sim

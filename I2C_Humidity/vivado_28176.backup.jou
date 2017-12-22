@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Dec  8 13:45:59 2017
+# Process ID: 28176
+# Current directory: D:/Temp and Hum/I2C_Humidity
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28564 D:\Temp and Hum\I2C_Humidity\I2C_Humidity.xpr
+# Log file: D:/Temp and Hum/I2C_Humidity/vivado.log
+# Journal file: D:/Temp and Hum/I2C_Humidity\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Temp and Hum/I2C_Humidity/I2C_Humidity.xpr}
+update_compile_order -fileset sources_1
